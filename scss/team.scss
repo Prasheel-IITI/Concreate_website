@@ -1,0 +1,69 @@
+@import "common";
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #1976d2,
+    #4773ce,
+    #606fc8,
+    #726cc2,
+    #8169bb
+  );
+}
+
+@media (max-width: 720px) {
+    #members {
+        padding: 30px;
+    }
+}
+
+.team {
+  text-align: center;
+  overflow: hidden;
+  align-content: center;
+}
+.col-lg-4 {
+  padding: 1.25em 1.25em;
+}
+.card {
+  background-color: white;
+  color: rgba(51, 57, 63, 1);
+  border-radius: 2em;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+  box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+  .card-title {
+    font-family: $montserrat;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0.12em;
+  }
+  .card-text {
+    font-family: $open-sans;
+    padding: 0em;
+    margin: 0em;
+  }
+  .profile-container {
+    padding: 40px 50px 4px;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .card-body{
+    font-size:15px;
+  }
+}
+#app {
+  a {
+    color: rgba(51, 57, 63, 1);
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: rgba(51, 57, 63, 0.75);
+      text-decoration: none;
+    }
+  }
+  i {
+    font-size: 1.3em;
+  }
+}
