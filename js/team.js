@@ -156,8 +156,8 @@ const heads = [
     img: "img/team/ashwani.jpeg",
     contact: "7023513672",
     year: "Third Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/Ashwanis31",
+        linkLin: "https://www.linkedin.com/in/ashwani-sharma-2b9811161"
   },
   {
     id: 2,
