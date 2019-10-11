@@ -41,7 +41,7 @@ const members = [
     name: "P. DEEKSHITH",
     description: "CLUB MEMBER",
     img: "img/team/dikshit.jpg",
-    year: "SECOND YEAR",
+    year: "FOURTH YEAR",
     linkGit: "",
     linkLin: ""
   },
@@ -165,7 +165,7 @@ const heads = [
     description: "EX-Club Head",
       img: "img/team/harshit.jpg",
     contact: "",
-    year: "Third Year",
+    year: "Fourth Year",
     linkGit: "",
     linkLin: ""
   }
