@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<!-- travis check -->
+
+<head>
+    <title>ConCreate Club</title>
+    <!-- Required meta class="nav-link" tags -->
+    <meta class="nav-link" charset="utf-8">
+    <meta name="description" content="We code.">
+    <meta name="keywords" content="JavaScript, Python, Golang, Rust, c, cpp, c++">
+    <meta name="author" content="Daemon Lab">
+    <meta class="nav-link" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
+          crossorigin="anonymous">
+    <link href="css/unite-gallery.css" rel="stylesheet" />
+    <style>
+
+        .blog-content {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #blogposts {
+            overflow-x: hidden;
+        }
+
+        .blog-content:after {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 90%);
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4em;
+        }
+
+        .blog-content > figure > img {
+            width: 100%;
+        }
+
+        .modal-body > figure > img {
+            width: 100%;
+        }
+
+        .modal-body > figure > figure > img {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .mybeautifulclass {
+                max-height: 10em;
+                overflow: hidden;
+            }
+
+            .blog-content {
+                font-size: 0.7em;
+            }
+
+            .cute-btn {
+                padding-left: 3em;
+                padding-right: 3em;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .card:hover {
+                transform: scale(1.0) !important;
+            }
+
+            .display-3 {
+                font-size: 4em;
+            }
+
+            .cute-btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-radius: 0px !important;
+            }
+        }
+
+        .cute-btn {
+            border-radius: 0px !important;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid parallax " id="main" style="height:110vh">
+        <div class="overlay" id="mainOverlay">
+            <div class="container-fluid  bg-dark" id="app">
+                <navbar-component />
+            </div>
+            <div class="container-fluid parallax bg-dark" id="secondary">
+                <div class="overlay" id="secondaryOverlay">
+                    <div class="container">
+                        <event-component></event-component>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid parallax slack" id="secondary">
+        <div class="container parallax" id="main" style="height:90vh">
+            <h1 class="display-3 text-white" style="padding-top: 1.2em">
+                THE
+                <br>ConCreate Club
+            </h1>
+            <p class="text-white" style="font-family: 'Open Sans', sans-serif;font-size: 2em;font-weight: 500">&nbsp;IIT INDORE</p>
+            <hr class="bg-white">
+            <h2 class="display-4" style=""><strong>"Take the best that exists and make it better"</strong></h2>
+            <h2>&emsp;Henry Royce</h2>
+
+        </div>
+    </div>
+        <div class="bg-dark" id="blogposts">
+            <div class="container">
+                <svg width="42" height="14">
+                    <rect width="48" height="12" fill="white"></rect>
+                </svg>
+                <h1 class="display-3 text-white">Events</h1>
+                <blog-component-modal v-for="post in posts" :post="post"></blog-component-modal>
+                <div class="row" id="blog" style="justify-content: center;">
+                    <blog-component v-for="post in posts" v-if="posts.length" :post="post"></blog-component>
+                    <img style="width:25%" v-if="!posts.length" src="img/loading.svg">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid parallax slack" id="secondary">
+            <div class="text-white" id="secondaryOverlay">
+                <div class="container">
+                    <svg width="42" height="14">
+                        <rect width="48" height="12" fill="white"></rect>
+                    </svg>
+                    <h1 class="display-3">Our Community</h1>
+                    <div class="container slack-content" style="width: 100%;">
+                        <div class="container" style="width: 100%; margin-top: 1em; padding: 0;">
+                            The Concreate club of IIT Indore was established in 2018 and since its formation it has been working for the betterment and upliftment of the engineering especially for the civil engineering department. The club will help you in exploring civil engineering through activities, lessons, and field trips.
+                            <br>
+                            <br>We have successfully organised many events, workshops, seminars and have also started first Student Chapter in the college. Participating in club activities is a great way to enrich the undergraduate academic experience, and build connections.
+                            <br> mail us at <a href="mailto:concreate@iiti.ac.in">concreate@iiti.ac.in</a> 
+
+                            <br>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <footer-component />
+        </div>
+        <script src="vendor/vue/vue.js"></script>
+        <script src="js/events.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script src="js/home.js"></script>
+        <script type="text/javascript" src="js/footer.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="js/unitegallery.js"></script>
+
+        <script src="js/themes/slider/ug-theme-slider.js"></script>
+        <link href='css/unite-gallery.css' rel='stylesheet' type='text/css' />
+
+        <script>
+            $(document).ready(function () {
+                $("#gallery").unitegallery();
+            });
+        </script>
+</body>
+
+</html>
