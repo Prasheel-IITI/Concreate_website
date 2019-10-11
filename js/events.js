@@ -2,14 +2,14 @@ Vue.component("event-component", {
   data: function() {
     return {
         events: [
-            { image: 'img/highlight/1.JPG' },
-            { image: 'img/highlight/2.JPG' },
-            { image: 'img/highlight/3.JPG' },
-            { image: 'img/highlight/4.JPG' },
-            { image: 'img/highlight/5.JPG' },
-            { image: 'img/highlight/6.JPG' },
-            { image: 'img/highlight/7.JPG' },
-            { image: 'img/highlight/8.JPG' },
+            { image: 'img/highlight/1.jpg' },
+            { image: 'img/highlight/2.jpg' },
+            { image: 'img/highlight/3.jpg' },
+            { image: 'img/highlight/4.jpg' },
+            { image: 'img/highlight/5.jpg' },
+            { image: 'img/highlight/6.jpg' },
+            { image: 'img/highlight/7.jpg' },
+            { image: 'img/highlight/8.jpg' },
                 
             ]
     };
