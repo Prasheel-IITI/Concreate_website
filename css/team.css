@@ -11,6 +11,9 @@
   letter-spacing: 0.15em;
 }
 
+#gallery {
+    margin: 0 auto;
+}
 .naav {
   border-radius: 1em;
   font-size: 15px;
@@ -75,16 +78,18 @@ body {
 }
 
 .col-lg-4 {
-  padding: 1.25em 1.25em;
+    padding: 1.25em 1.25em;
+    margin: 0 auto;
 }
 
 .card {
-  background-color: white;
-  color: #33393f;
-  border-radius: 2em;
-  margin-bottom: 1em;
-  font-size: 1.8em;
-  box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+    background-color: white;
+    color: #33393f;
+    border-radius: 2em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
 }
 .card .card-title {
   font-family: "Montserrat", sans-serif;
