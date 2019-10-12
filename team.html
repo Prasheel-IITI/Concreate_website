@@ -45,14 +45,21 @@
         <h1 class="display-3 text-white py-4 text-center">Meet The Team</h1>
         <div class="container" id="heads">
             <div class="team row">
-                <div class="col-lg-2"></div>
+                <div class=""></div>
                 <head-component v-for="head in heads" :head="head" />
-                <div class="col-lg-2"></div>
+                <div class=""></div>
             </div>
         </div>
-        <div class="team row" id="members">
-            <member-component v-for="member in members" :member="member" />
+        <div class="team row" id="third_yrs">
+            <third_yr-component v-for="third_yr in third_yrs" :third_yr="third_yr" />
         </div>
+   
+    <div class="team row" id="second_yrs">
+        <second_yr-component v-for="second_yr in second_yrs" :second_yr="second_yr" />
+    </div>
+    <div class="team row" id="fourth_yrs">
+        <fourth_yr-component v-for="fourth_yr in fourth_yrs" :fourth_yr="fourth_yr" />
+    </div>
     </div>
     <div id="foot">
         <footer-component />
