@@ -15,7 +15,7 @@ Vue.component("navbar-component", {
                   <a class="naav" href="gallery.html">GALLERY</a>
               </li>
               <li class="nav-item">
-                  <a class="naav" href="team.html">COMMUNITY</a>
+                  <a class="naav" href="team.html">TEAM</a>
               </li>
           </ul>
       </div>

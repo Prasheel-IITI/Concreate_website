@@ -18,7 +18,6 @@ Vue.component("event-component", {
         <div>
             <div class="team row" id="gallery">
             <img style="height:20em;max-width:20em;" v-for="project in events" :src="project.image" :data-image="project.image" data-description="Random">
-        
   	        </div>
     </div>
   `
