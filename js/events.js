@@ -10,7 +10,7 @@ Vue.component("event-component", {
             { image: 'img/highlight/6.jpg' },
             { image: 'img/highlight/7.jpg' },
             { image: 'img/highlight/8.jpg' },
-                
+            { image: 'img/highlight/9.jpeg'}, 
             ]
     };
   },
